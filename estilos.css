@@ -1,0 +1,544 @@
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*padding*/
+.contenedorEncabezado, .primeraCaja, .cajaProyectos{
+    padding: 20px;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    text-transform: uppercase;
+}
+h2{
+    text-transform: capitalize;
+}
+
+
+
+/*cabeza*/
+.cabeza{
+    background-image: linear-gradient(0deg, 
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+             url('imagenes/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/*navegador*/
+.navegador  ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+.navegador ul li{
+    list-style: none;
+    border-bottom: 1px solid rgba(144, 144, 144,0.5);
+    
+}
+.navegador ul li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 15px 25px;
+}
+
+.navegador ul li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+.navegador ul li a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+
+
+
+/*titulo*/
+.contenedorEncabezado{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contenedorEncabezado .contenedorTitulo h1{
+    color: whitesmoke;
+
+}
+
+.contenedorEncabezado .contenedorTitulo h1 span{
+    color: rgb(89, 230, 206);
+
+}
+
+.contenedorTitulo .cajaDescripcion{
+    margin-top: 20px;
+}
+.contenedorTitulo .cajaDescripcion h2{
+    color: rgb(89, 230, 206);
+    font-size: 1rem;
+
+}
+
+.contenedorTitulo .cajaDescripcion p{
+    text-wrap:wrap;
+    word-break: keep-all;
+    color: whitesmoke;
+    font-size: 0.75;
+}
+
+/*user*/
+.contenedorUser{
+    margin-top: 20px;
+}
+
+.cajaUser{
+    
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px black;
+    border-radius: 50px;
+   transition: 0.2s ease-out;
+    
+}
+.cajaUser:hover{
+    transform: scale(102%);
+}
+
+
+.cajaUser .userImagen{
+    display: block;
+    position:relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    bottom: 0;
+    opacity: 1;
+    transition: 0.5s ease-out;
+    
+    
+       
+    
+}
+
+.cajaUser .aaa{
+    background-color: rgb(0,0,0);
+    background-color: rgb(0, 0, 0);
+}
+
+.cajaUser:hover .userImagen{
+    bottom: 55px;
+    box-shadow: 0px 15px 30px black;
+    opacity: 0.7;
+   
+}
+
+.contenedorUser .cajaUser{
+    position: relative;
+    
+}
+
+.cajaUser .redesImagen{
+    width: 15%;
+    height: auto;
+    box-shadow: 0px 8px 20px black;
+    border-radius: 8px;
+    background-color: rgb(61, 163, 146);
+}
+
+.cajaUser .cajaRedesSociales{
+    position: absolute;
+    width: 100%;
+   display: flex;
+   padding: 5px 0;
+   justify-content:space-around;
+   left: 0%;
+   top: 72%;
+   opacity: 0;
+   color: transparent;
+   transition: opacity 0.5s ease-out;
+   z-index: 2;
+}
+
+.cajaUser:hover .cajaRedesSociales{
+    opacity: 1;
+    
+    
+}
+
+.cajaUser .cajaSuperposicionada{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(135, 125, 179);
+    padding: 20px 5px;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0px 8px 20px black;
+    z-index: 0;
+}
+
+
+.cajaUser .cajaSuperposicionada h2{
+    font-size: 0.75rem;
+    text-align: center;
+    color: whitesmoke;
+}
+
+/*contenedorPrincipal*/
+/*imagenHabilidad*/
+.primeraCaja{
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 93vh;
+}
+
+.cajaImagen{
+    padding-bottom: 25px;
+}
+
+.contenedorPrincipal .titulo h2{
+    padding: 100px;
+    font-size: 1.25rem;
+    text-align: right;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-right: 20px;
+}
+.primeraCaja div{
+    overflow: hidden;
+
+}
+.primeraCaja .habilidadImagen{
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0px 8px 20px rgb(135, 125, 179, 0.6);
+    transform: scale(100%);
+    transition:  0.5s ease-out;
+    
+}
+
+.primeraCaja .habilidadImagen:hover{
+    transform: scale(110%);
+}
+
+/*cajaiconos*/
+
+.primeraCaja .habilidadesImagen{
+    position: relative;
+    top: 3px;
+    width: 15%;
+
+    transition: 0.5s ease-out;
+}
+
+.primeraCaja .habilidadesImagen:hover{
+    transform: scale(110%);
+}
+
+
+.cajaHabilidades .iconos {
+    position: relative;
+    width: 100%;
+     background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: 0.2s ease-out;
+    
+}
+.cajaHabilidades .iconos:hover{
+    transform: scale(105%);
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+.iconos .textoSuperposicionado {
+    position: absolute;
+    left: 18%;
+    top: 34%;
+    
+
+}
+
+.iconos h2{
+    color: whitesmoke;
+    font-size: 1rem;
+    
+}
+
+
+.segundaCaja{
+    background-color: whitesmoke;
+    height: 100vh;
+    
+}
+
+/* PROYECTO */
+.segundaCaja .aaaaa{
+   padding: 100px 20px;
+    font-size: 1.25rem;
+  
+}
+
+.contenedorProyectos{
+    display: grid;
+    gap: 40px;
+   justify-content: center;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    
+    
+}
+
+.itemsUno{
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+    
+   
+}
+
+.itemsUno:hover{
+     box-shadow: 0px 10px 20px black;
+         transform: scale(105%);
+        
+        
+}
+.itemsUno .proyectoTitulo{
+    width: 100%;
+    padding: 15px 10px;
+    position:absolute;
+    left: 50px;
+    top: -100px;
+    color: rgb(6, 139, 117);
+    opacity: 0;
+    background-color: rgba(255, 255, 255,0.8);
+        color: rgb(0, 0, 0);
+    transition: 0.5s ease-in-out;
+    transform: translate(-50px, 0);
+
+}
+.itemsUno:hover .proyectoTitulo{
+    transform: translate(-50px, 103px);
+    opacity: 1;
+    
+}
+
+.itemsUno .proyectoDescripcion{
+    width: 100%;
+    /* height: 0; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    
+    /* display: none; */
+     transition: 0.5s ease-in-out;
+  
+}
+
+.itemsUno:hover .proyectoDescripcion{
+    background-color: rgba(135, 125, 179);
+    color: whitesmoke;
+}
+
+
+.proyectoDescripcion h3{
+        padding: 0 12px;
+}
+.proyectoDescripcion p{
+        height: 80px;
+        overflow: hidden;
+        padding: 0 12px;
+        word-break: keep-all;
+        
+
+}
+
+.proyectoDescripcion:hover p{
+    overflow: scroll;
+}
+
+
+
+
+
+.proyectoImagen .itemImagen {
+    width: 100%;
+    display: block;
+}
+
+.contenedorProyectos .items-contenedor{
+    padding: 100px;
+    background-color: brown;
+    text-align: center;
+    color: whitesmoke;
+    
+}
+
+
+
+/*medias query*/
+
+/*flex de titulo y caja user*/
+
+
+@media screen and (min-width: 434px){
+    /*navegador*/
+    .cabeza{
+        height: 100vh;
+    }
+
+    .navegador ul{
+        flex-direction: row;
+        justify-content: end;
+        padding-right: 50px;
+
+    }
+
+    .navegador ul li {
+        border-bottom: none;
+    }
+   
+    
+    .cajaUser {
+    width: 292px;
+    margin: 0 auto;
+   
+   }
+   .primeraCaja{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content:center ;
+   }
+
+   .contenedorUser{
+        padding-bottom: 10px;
+   }
+
+    .contenedorEncabezado,
+    .primeraCaja,
+    .cajaProyectos {
+        padding: 0 100px;
+    }
+    
+
+        .contenedorPrincipal .titulo h2 {
+            padding-right: 100px;
+        }
+
+}
+
+@media screen and (min-width: 548px) {
+
+    .primeraCaja .habilidadImagen {
+        width: 508px;
+    }
+    
+    .primeraCaja .habilidadesImagen{
+        width: 76px;
+    }
+        .iconos .textoSuperposicionado {
+            left: 90px;
+            top: 40px;
+            
+        }
+}
+
+@media screen and (min-width: 554px) {
+.cajaHabilidades .iconos{
+        width: 352px;
+
+    }
+        .contenedorPrincipal .titulo h2{
+            font-size: 2.25rem;
+        }
+
+
+
+}
+
+
+
+@media screen and (min-width: 752px) {
+
+    .contenedorEncabezado .contenedorTitulo .fff {
+            font-size: 50px;
+    
+        }
+    
+        .contenedorEncabezado .contenedorTitulo h1 {
+            color: whitesmoke;
+            font-size: 3rem;
+            
+        }
+
+    .primeraCaja {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content:space-between;
+            column-gap: 20px;
+        }
+       
+
+    .contenedorEncabezado {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+        gap: 20px;
+        height: 100%;
+        
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+.contenedorEncabezado,
+.primeraCaja,
+.cajaProyectos{
+    padding: 0 200px;
+}
+.contenedorPrincipal .titulo h2{
+    padding-right: 200px ;
+}
+
+
+}
+
+@media screen and (min-width: 1260px) {
+    
+    .contenedorEncabezado .contenedorTitulo .fff {
+            font-size: 110px;
+    
+        }
+    
+        .contenedorEncabezado .contenedorTitulo h1 {
+            color: whitesmoke;
+            font-size: 6rem;
+    
+        }
+}
